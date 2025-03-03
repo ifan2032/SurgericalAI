@@ -42,7 +42,6 @@ def benchmark_postprocess(transcript_array, medical_terms):
         transcript_array[i] = transcript_array[i].lower()
     return transcript_array
 
-
 def model_postprocess(transcript_array, medical_terms):
     for i in range(len(transcript_array)):
         transcript_array[i] = transcript_array[i].replace(".", "").replace("*", "")
